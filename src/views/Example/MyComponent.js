@@ -3,7 +3,7 @@ import React from "react";
 class MyComponent extends React.Component {
 
     state = {
-        name: 'Hoan',
+        name: '',
         major: 'Information Technology'
     }
 
@@ -18,6 +18,7 @@ class MyComponent extends React.Component {
     }
 
     render() {
+        {console.log('>>>call render: ', this.state)}
         return (
             <>
                 <div className="first">
